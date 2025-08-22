@@ -19,4 +19,4 @@ Este repositorio contiene mi **Currículum Vitae en versión web**, desarrollado
 ## 🚀 Cómo usar este repositorio
 1. Clona o descarga el proyecto:
    ```bash
-   git clone https://github.com/<TU-USUARIO>/cv-angel.git
+   git clone https://github.com/AngelInfinityMore/cv-angel.git
