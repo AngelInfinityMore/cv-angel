@@ -4,50 +4,56 @@
   <meta charset="utf-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1" />
   <title>CV – Angel Ubaldo de Luna Rechy</title>
-  <meta name="description" content="Project Manager con background en desarrollo e infraestructura." />
+  <meta name="description" content="Project Manager con background en desarrollo e infraestructura. CV bilingüe ES/EN." />
   <style>
     :root{
-      --bg: #0b0c0f;
-      --paper:#111318;
-      --ink:#e9eef7;
-      --sub:#b6c2d9;
-      --accent:#7cc4ff;
-      --line:#242938;
-      --chip:#1a2234;
+      --bg: #0c1016;
+      --paper:#0f1420;
+      --ink:#e6edf3;
+      --sub:#9fb0c3;
+      --accent:#64b5ff;
+      --line:#1d2635;
+      --chip:#131c2b;
       --ok:#86efac;
+      --danger:#ef4444;
     }
     @media (prefers-color-scheme: light){
       :root{
-        --bg:#f8fafc; --paper:#ffffff; --ink:#0b1220; --sub:#3a516b;
-        --accent:#0ea5e9; --line:#e6e9f2; --chip:#eef2f8; --ok:#16a34a;
+        --bg:#f6f8fb; --paper:#ffffff; --ink:#0c1220; --sub:#475b78;
+        --accent:#0ea5e9; --line:#e6eaf2; --chip:#eef2f8; --ok:#16a34a; --danger:#b91c1c;
       }
     }
     *{box-sizing:border-box}
-    html,body{margin:0;padding:0;background:var(--bg);color:var(--ink);font:16px/1.55 system-ui,Segoe UI,Roboto,Ubuntu,"Helvetica Neue",Arial,sans-serif}
+    html,body{margin:0;padding:0;background:var(--bg);color:var(--ink);font:16px/1.58 system-ui,Segoe UI,Roboto,Ubuntu,"Helvetica Neue",Arial,sans-serif}
     a{color:var(--accent);text-decoration:none} a:hover{text-decoration:underline}
     .wrap{max-width:1000px;margin:auto;padding:28px}
-    .card{background:var(--paper);border:1px solid var(--line);border-radius:16px;overflow:hidden;box-shadow:0 6px 24px rgba(0,0,0,.12)}
-    header{display:flex;gap:18px;align-items:center;padding:22px 22px 14px 22px;border-bottom:1px solid var(--line)}
+    .card{background:var(--paper);border:1px solid var(--line);border-radius:16px;overflow:hidden;box-shadow:0 8px 28px rgba(0,0,0,.18)}
+    header{display:flex;gap:18px;align-items:center;padding:22px;border-bottom:1px solid var(--line);flex-wrap:wrap}
     .title h1{font-size:28px;margin:0}
     .title .role{color:var(--sub);font-weight:600;margin-top:6px}
     .toolbar{margin-left:auto;display:flex;gap:8px;flex-wrap:wrap}
     .btn{border:1px solid var(--line);background:transparent;color:var(--ink);padding:8px 12px;border-radius:10px;cursor:pointer}
     .btn[data-active="true"]{background:var(--chip);border-color:var(--accent);box-shadow:0 0 0 1px var(--accent) inset}
     .btn.primary{background:var(--accent);color:#07131f;border-color:transparent}
-    .grid{display:grid;grid-template-columns:280px 1fr}
-    @media (max-width:900px){.grid{grid-template-columns:1fr}}
+    .grid{display:grid;grid-template-columns:300px 1fr}
+    @media (max-width:920px){.grid{grid-template-columns:1fr}}
     aside{border-right:1px solid var(--line);padding:20px}
+    @media (max-width:920px){aside{border-right:none;border-bottom:1px solid var(--line)}}
     main{padding:20px}
     h2{font-size:14px;letter-spacing:.06em;text-transform:uppercase;color:var(--sub);margin:18px 0 10px}
-    .box{border:1px solid var(--line);background:linear-gradient(180deg, transparent, rgba(0,0,0,.03));padding:14px;border-radius:12px;margin-bottom:14px}
-    .row{display:flex;align-items:center;gap:8px;margin:6px 0}
+    .box{border:1px solid var(--line);background:linear-gradient(180deg, transparent, rgba(0,0,0,.04));padding:14px;border-radius:12px;margin-bottom:14px}
+    .row{display:flex;align-items:center;gap:10px;margin:6px 0}
     .chip{display:inline-block;background:var(--chip);padding:6px 10px;border-radius:999px;border:1px solid var(--line);margin:4px 6px 0 0;font-size:13px}
     ul{margin:8px 0 0 20px;padding:0}
     li{margin:6px 0}
     .meta{display:flex;gap:10px;flex-wrap:wrap}
     .meta a,.meta span{font-size:14px;color:var(--sub)}
-    .success{color:var(--ok);font-weight:700}
     .muted{color:var(--sub)}
+    .success{color:var(--ok);font-weight:700}
+    .contact-card{display:grid;grid-template-columns:auto 1fr;gap:10px 12px;align-items:center;border:1px dashed var(--line);border-radius:12px;padding:12px;background:linear-gradient(180deg, rgba(255,255,255,.02), transparent)}
+    .contact-icon{font-size:18px;line-height:0}
+    .contact-link{color:var(--ink);text-decoration:none}
+    .contact-link:hover{text-decoration:underline}
     /* Print */
     @media print{
       .toolbar{display:none}
@@ -57,16 +63,6 @@
       a{text-decoration:none;color:inherit}
     }
   </style>
-  <script type="application/ld+json">
-  {
-    "@context":"https://schema.org",
-    "@type":"Person",
-    "name":"Angel Ubaldo de Luna Rechy",
-    "jobTitle":"Project Manager",
-    "email":"mailto:angeldelunarechy.404@gmail.com",
-    "telephone":"+52-5572381298"
-  }
-  </script>
 </head>
 <body>
   <div class="wrap">
@@ -76,9 +72,9 @@
           <h1>Angel Ubaldo de Luna Rechy</h1>
           <div class="role">Project Manager · Desarrollo & Infraestructura</div>
           <div class="meta">
-            <a href="tel:+525572381298">+52 5572381298</a>
+            <a href="tel:+525572381298">+52 557 238 1298</a>
             <span>•</span>
-            <a href="mailto:201241021@alumnos.utn.edu">angeldelunarechy.404@gmail.com</a>
+            <a href="mailto:angeldelunarechy.404@gmail.com">angeldelunarechy.404@gmail.com</a>
           </div>
         </div>
         <div class="toolbar" aria-label="Controles">
@@ -92,27 +88,29 @@
         <!-- ===== SIDEBAR ===== -->
         <aside>
           <section>
-            <h2>Perfil</h2>
+            <h2>Perfil / Profile</h2>
             <div class="box" data-i18n="profile">
               <p class="es">
-                Ingeniero en Tecnologías de la Información <span class="muted">(titulación en trámite)</span>, con más de <strong>5 años de experiencia</strong> combinando desarrollo de software, coordinación de equipos y gestión de proyectos en entornos de alta presión. Experto atendiendo errores/incidencias, <strong>proactivo</strong> y orientado a resultados.
+                Ingeniero en Tecnologías de la Información <span class="muted">(titulación en trámite)</span>, con más de <strong>5 años de experiencia</strong> combinando desarrollo de software, coordinación de equipos, infraestructura y gestión de proyectos. <strong>Proactivo</strong>, experto en atención de errores/incidencias y comunicación con stakeholders.
               </p>
               <p class="en" hidden>
-                IT Engineer <span class="muted">(degree in progress)</span> with <strong>5+ years of experience</strong> across software development, team coordination, and project management in high-pressure environments. Strong incident/bug handling, <strong>proactive</strong>, and results-driven.
+                IT Engineer <span class="muted">(degree in progress)</span> with <strong>5+ years</strong> across software development, team coordination, infrastructure, and project management. <strong>Proactive</strong>, strong in incident handling and stakeholder communication.
               </p>
             </div>
           </section>
 
           <section>
-            <h2>Contacto</h2>
-            <div class="box">
-              <div class="row">📞 <a href="tel:+525572381298">+52 557 238 1298</a></div>
-              <div class="row">✉️ <a href="mailto:201241021@alumnos.utn.edu">angeldelunarechy.404@gmail.com</a></div>
+            <h2>Contacto / Contact</h2>
+            <div class="contact-card">
+              <div class="contact-icon">📞</div>
+              <div><a class="contact-link" href="tel:+525572381298">+52 557 238 1298</a></div>
+              <div class="contact-icon">✉️</div>
+              <div><a class="contact-link" href="mailto:angeldelunarechy.404@gmail.com">angeldelunarechy.404@gmail.com</a></div>
             </div>
           </section>
 
           <section>
-            <h2>Educación</h2>
+            <h2>Educación / Education</h2>
             <div class="box" data-i18n="edu">
               <p class="es"><strong>Ingeniería en Tecnologías de la Información</strong><br/>Universidad Tecnológica de Nezahualcóyotl<br/><span class="muted">Titulación en trámite</span></p>
               <p class="en" hidden><strong>Information Technology Engineering</strong><br/>Universidad Tecnológica de Nezahualcóyotl<br/><span class="muted">Degree in progress</span></p>
@@ -120,20 +118,31 @@
           </section>
 
           <section>
-            <h2>Habilidades</h2>
+            <h2>Herramientas / Tools</h2>
             <div class="box">
-              <div class="muted" style="font-size:13px;margin-bottom:6px">Gestión de Proyectos</div>
-              <span class="chip">Scrum</span><span class="chip">Kanban</span><span class="chip">Prioridades</span><span class="chip">Documentación</span><span class="chip">Trabajo bajo presión</span>
-              <div class="muted" style="font-size:13px;margin:12px 0 6px">Tecnologías / Dev</div>
+              <span class="chip">Excel (avanzado)</span>
+              <span class="chip">Jira</span>
+              <span class="chip">GitHub</span>
+              <span class="chip">Documentación</span>
+              <span class="chip">Gestión de riesgos</span>
+              <span class="chip">UAT / QA</span>
+            </div>
+          </section>
+
+          <section>
+            <h2>Tecnologías / Tech</h2>
+            <div class="box">
+              <div class="muted" style="font-size:13px;margin-bottom:6px">Dev</div>
               <span class="chip">Java</span><span class="chip">JavaScript</span><span class="chip">PHP</span>
-              <span class="chip">React</span><span class="chip">Angular</span><span class="chip">Spring</span><span class="chip">Express</span><span class="chip">Bootstrap</span>
-              <div class="muted" style="font-size:13px;margin:12px 0 6px">Bases de Datos</div>
+              <span class="chip">React</span><span class="chip">Angular</span><span class="chip">Spring</span>
+              <span class="chip">Express</span><span class="chip">Bootstrap</span>
+              <div class="muted" style="font-size:13px;margin:10px 0 6px">Bases de Datos</div>
               <span class="chip">SQL (intermedio)</span><span class="chip">MariaDB</span><span class="chip">MongoDB</span><span class="chip">SQL Server</span><span class="chip">Firebase</span>
             </div>
           </section>
 
           <section>
-            <h2>Intereses</h2>
+            <h2>Intereses / Interests</h2>
             <div class="box">
               <span class="chip">Ajedrez</span>
               <span class="chip">Lectura</span>
@@ -148,82 +157,77 @@
         <!-- ===== MAIN ===== -->
         <main>
           <section>
-            <h2>Resumen de Impacto</h2>
+            <h2>Resumen de Impacto / Impact Summary</h2>
             <div class="box" data-i18n="impact">
               <ul class="es">
                 <li><strong>Lideré</strong> proyectos de desarrollo digital y mejora de sistemas con equipos multidisciplinarios (<strong>hasta 5 personas</strong>).</li>
-                <li><strong>Coordiné</strong> implementación de nuevas funcionalidades y optimización de plataformas, <span class="success">reduciendo tiempos de entrega en 50%</span>.</li>
-                <li><strong>3 años</strong> como Constructor y <strong>2 años</strong> como Senior a cargo de proyectos y equipos de desarrollo.</li>
-                <li>Amplia experiencia atendiendo <strong>errores/incidencias</strong> y gestionando <strong>prioridades bajo presión</strong>.</li>
+                <li><strong>Coordiné</strong> nuevas funcionalidades y optimizaciones, <span class="success">reduciendo tiempos de entrega en 50%</span>.</li>
+                <li><strong>3 años</strong> como Constructor y <strong>2 años</strong> como Senior, a cargo de proyectos y equipos de desarrollo.</li>
+                <li>Amplia experiencia en <strong>pruebas (QA, UAT)</strong> y en <strong>trato directo con clientes y directivos</strong>.</li>
+                <li>Gestión ágil con <strong>Jira</strong>, control de versiones con <strong>GitHub</strong> y reporting con <strong>Excel</strong>.</li>
               </ul>
               <ul class="en" hidden>
                 <li><strong>Led</strong> digital development and system improvement projects with cross-functional teams (<strong>up to 5 people</strong>).</li>
-                <li><strong>Coordinated</strong> new feature delivery and platform optimization, <span class="success">cutting delivery times by 50%</span>.</li>
+                <li><strong>Coordinated</strong> new features and optimization, <span class="success">cutting delivery times by 50%</span>.</li>
                 <li><strong>3 years</strong> as Constructor and <strong>2 years</strong> as Senior, overseeing projects and dev teams.</li>
-                <li>Extensive experience handling <strong>bugs/incidents</strong> and <strong>priorities under pressure</strong>.</li>
+                <li>Extensive experience in <strong>testing (QA, UAT)</strong> and <strong>direct communication with clients and executives</strong>.</li>
+                <li>Agile management with <strong>Jira</strong>, version control with <strong>GitHub</strong>, and reporting in <strong>Excel</strong>.</li>
               </ul>
             </div>
           </section>
 
           <section>
-            <h2>Experiencia</h2>
+            <h2>Experiencia / Experience</h2>
             <div class="box" data-i18n="exp1">
-              <p class="es"><strong>Senior Constructor — ITComplements</strong></p>
+              <p class="es"><strong>Senior Constructor — ITComplements</strong> <span class="muted">(2021 – Actualidad)</span></p>
               <ul class="es">
                 <li>Liderazgo de proyectos, coordinación de roadmap y gestión de stakeholders.</li>
                 <li>Entrega de mejoras continuas; coordinación de QA y despliegues controlados.</li>
                 <li>Gestión de incidencias críticas y métricas operativas para reducir reprocesos.</li>
+                <li>Relación directa con clientes y <strong>directivos</strong> para toma de decisiones.</li>
               </ul>
 
-              <p class="en" hidden><strong>Senior Constructor — ITComplements</strong></p>
+              <p class="en" hidden><strong>Senior Constructor — ITComplements</strong> <span class="muted">(2021 – Present)</span></p>
               <ul class="en" hidden>
                 <li>Project leadership, roadmap coordination, and stakeholder management.</li>
-                <li>Continuous improvement delivery; QA coordination and controlled releases.</li>
+                <li>Continuous improvement, QA coordination, and controlled releases.</li>
                 <li>Critical incident management and operational metrics to reduce rework.</li>
+                <li>Direct interaction with clients and <strong>executives</strong> for decision-making.</li>
               </ul>
             </div>
 
             <div class="box" data-i18n="exp2">
-              <p class="es"><strong>Mesa de Servicio / Desarrollador — Factrónica</strong></p>
+              <p class="es"><strong>Mesa de Servicio / Desarrollador — Factrónica</strong> <span class="muted">(2019 – 2021)</span></p>
               <ul class="es">
                 <li>Atención y resolución de incidencias de usuarios en plataforma core.</li>
-                <li>Implementación de ajustes y mejoras que disminuyeron recurrencia de errores.</li>
-                <li>Colaboración con equipos de desarrollo e infraestructura para continuidad operativa.</li>
+                <li>Implementación de ajustes y mejoras que disminuyeron la recurrencia de errores.</li>
+                <li>Colaboración con desarrollo e infraestructura para continuidad operativa.</li>
               </ul>
 
-              <p class="en" hidden><strong>Service Desk / Developer — Factrónica</strong></p>
+              <p class="en" hidden><strong>Service Desk / Developer — Factrónica</strong> <span class="muted">(2019 – 2021)</span></p>
               <ul class="en" hidden>
                 <li>User incident handling on core platform.</li>
                 <li>Implemented fixes and improvements reducing recurring issues.</li>
-                <li>Worked with dev and infrastructure teams to ensure service continuity.</li>
+                <li>Worked with dev and infra teams to ensure service continuity.</li>
               </ul>
             </div>
           </section>
 
           <section>
-            <h2>Tecnologías</h2>
-            <div class="box" data-i18n="tech">
-              <p class="es muted" style="margin-top:0">Principales</p>
-              <div>
-                <span class="chip">Java</span><span class="chip">JavaScript</span><span class="chip">PHP</span>
-                <span class="chip">React</span><span class="chip">Angular</span><span class="chip">Spring</span>
-                <span class="chip">Express</span><span class="chip">Bootstrap</span>
-              </div>
-              <p class="en muted" style="margin-top:0" hidden>Main</p>
-              <div class="en" hidden>
-                <span class="chip">Java</span><span class="chip">JavaScript</span><span class="chip">PHP</span>
-                <span class="chip">React</span><span class="chip">Angular</span><span class="chip">Spring</span>
-                <span class="chip">Express</span><span class="chip">Bootstrap</span>
-              </div>
-
-              <p class="es muted" style="margin:12px 0 0">Bases de datos</p>
-              <div>
-                <span class="chip">SQL (intermedio)</span><span class="chip">MariaDB</span><span class="chip">MongoDB</span><span class="chip">SQL Server</span><span class="chip">Firebase</span>
-              </div>
-              <p class="en muted" style="margin:12px 0 0" hidden>Databases</p>
-              <div class="en" hidden>
-                <span class="chip">SQL (intermediate)</span><span class="chip">MariaDB</span><span class="chip">MongoDB</span><span class="chip">SQL Server</span><span class="chip">Firebase</span>
-              </div>
+            <h2>Proyectos Relevantes / Key Projects</h2>
+            <div class="box">
+              <ul class="es">
+                <li><strong>Factrónica:</strong> Optimización de sistemas core, reducción de incidencias y mejora de tiempos de despliegue.</li>
+                <li><strong>Bimbo:</strong> Implementación tecnológica a gran escala con coordinación de múltiples áreas.</li>
+                <li><strong>Paper Intelligence (Notarías):</strong> Automatización y análisis documental para procesos notariales.</li>
+                <li><strong>ANAM:</strong> Implementación de soluciones administrativas y de reporte.</li>
+              </ul>
+              <ul class="en" hidden>
+                <li><strong>Factrónica:</strong> Core system optimization, incident reduction, and faster release cycles.</li>
+                <li><strong>Bimbo:</strong> Large-scale tech implementation with multi-area coordination.</li>
+                <li><strong>Paper Intelligence (Notaries):</strong> Automation and document analysis for notarial workflows.</li>
+                <li><strong>ANAM:</strong> Implementation of administrative and reporting solutions.</li>
+              </ul>
             </div>
           </section>
         </main>
@@ -237,7 +241,6 @@
       const enBtn = document.getElementById('enBtn');
       const setLang = (lang)=>{
         document.documentElement.lang = lang === 'en' ? 'en' : 'es';
-        // Toggle all .es and .en nodes
         document.querySelectorAll('.es').forEach(n=>n.hidden = (lang !== 'es'));
         document.querySelectorAll('.en').forEach(n=>n.hidden = (lang !== 'en'));
         esBtn.dataset.active = (lang==='es');
@@ -245,11 +248,13 @@
       };
       esBtn.addEventListener('click', ()=>setLang('es'));
       enBtn.addEventListener('click', ()=>setLang('en'));
-      // If browser is English, default to EN once
+      // Auto EN if browser is English
       const prefersEn = navigator.language && navigator.language.startsWith('en');
       if (prefersEn) setLang('en');
     })();
   </script>
 </body>
 </html>
-
+with open("/mnt/data/index.html", "w", encoding="utf-8") as f:
+    f.write(html)
+"/mnt/data/index.html"
