@@ -15,12 +15,11 @@
       --line:#1d2635;
       --chip:#131c2b;
       --ok:#86efac;
-      --danger:#ef4444;
     }
     @media (prefers-color-scheme: light){
       :root{
         --bg:#f6f8fb; --paper:#ffffff; --ink:#0c1220; --sub:#475b78;
-        --accent:#0ea5e9; --line:#e6eaf2; --chip:#eef2f8; --ok:#16a34a; --danger:#b91c1c;
+        --accent:#0ea5e9; --line:#e6eaf2; --chip:#eef2f8; --ok:#16a34a;
       }
     }
     *{box-sizing:border-box}
@@ -70,7 +69,7 @@
       <header>
         <div class="title">
           <h1>Angel Ubaldo de Luna Rechy</h1>
-          <div class="role">Project Manager · Desarrollo & Infraestructura</div>
+          <div class="role">Project Manager · Desarrollo &amp; Infraestructura</div>
           <div class="meta">
             <a href="tel:+525572381298">+52 557 238 1298</a>
             <span>•</span>
@@ -222,12 +221,14 @@
             <div class="box">
               <ul class="es">
                 <li><strong>Factrónica (Timbrado CFDI):</strong> Plataforma de timbrado de CFDIs ante el SAT a través de un PAC de certificación. Gestión de flujos XML, validaciones fiscales y despliegues seguros.</li>
+                <li><strong>Radio Web (Prácticas universitarias):</strong> Proyecto de radio para multimedios informativos basado en <em>microservicios</em> para la ingesta, procesamiento y emisión de contenido; escalabilidad y despliegue modular.</li>
                 <li><strong>Paper Intelligence (Notarías):</strong> Automatización de dashboards y gráficos para evaluar productividad de sistemas de gestión; orquestación de procesos de atención disparados por métricas.</li>
                 <li><strong>Bimbo:</strong> Sistema de facturación integrado con el ambiente de procesos de producción; coordinación inter-áreas y aseguramiento de calidad.</li>
                 <li><strong>ANAM:</strong> Sistema de seguimiento de productos aduanales; trazabilidad, reporteo y controles operativos.</li>
               </ul>
               <ul class="en" hidden>
                 <li><strong>Factrónica (CFDI Stamping):</strong> CFDI stamping platform with SAT via a certified PAC. XML workflow management, fiscal validations, and secure releases.</li>
+                <li><strong>Web Radio (University internship):</strong> News multimedia radio built with <em>microservices</em> for ingest, processing, and broadcasting; modular deployment and scalability.</li>
                 <li><strong>Paper Intelligence (Notaries):</strong> Automation of dashboards and charts to measure productivity in management systems; process orchestration triggered by KPIs.</li>
                 <li><strong>Bimbo:</strong> Billing system integrated with the production process environment; cross-team coordination and quality assurance.</li>
                 <li><strong>ANAM:</strong> Customs product tracking system; traceability, reporting, and operational controls.</li>
@@ -248,11 +249,10 @@
         document.querySelectorAll('.es').forEach(n=>n.hidden = (lang !== 'es'));
         document.querySelectorAll('.en').forEach(n=>n.hidden = (lang !== 'en'));
         esBtn.dataset.active = (lang==='es');
-        enBtn.dataset.active = (lang==='en');
+        enBtn.dataset.active = (lang==='en'));
       };
       esBtn.addEventListener('click', ()=>setLang('es'));
       enBtn.addEventListener('click', ()=>setLang('en'));
-      // Auto EN if browser is English
       const prefersEn = navigator.language && navigator.language.startsWith('en');
       if (prefersEn) setLang('en');
     })();
